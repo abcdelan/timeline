@@ -1,0 +1,32 @@
+body{
+  background-color: #a7c1db;
+}
+h1{
+  font-family: titling-gothic-fb, sans-serif;
+  font-size: 3em;
+  color:#0b2738;
+  float:right;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #dda6a6;
+  border-radius: 50%;
+  display:inline;
+}
+p{
+  font-family: stevie-sans, sans-serif;
+  font-size: 1em;
+  opacity:0;
+  color:#0b2738;
+}
+p:hover{
+  opacity:100;
+}
+
+/*p {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+}*/

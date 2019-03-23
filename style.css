@@ -53,62 +53,111 @@ span.poof:hover + iframe{
 .dot:nth-child(12n+1){
     background-color: #d64441;
 }
+.dot:nth-child(12n+2){
+    background-color: #d64441;
+}
+.dot:nth-child(12n+3){
+    background-color: #d64441;
+}
 .dot:nth-child(12n+4){
+    background-color: #148248;
+}
+.dot:nth-child(12n+5){
+    background-color: #148248;
+}
+.dot:nth-child(12n+6){
     background-color: #148248;
 }
 .dot:nth-child(12n+7){
     background-color: #eace28;
 }
+.dot:nth-child(12n+8){
+    background-color: #eace28;
+}
+.dot:nth-child(12n+9){
+    background-color: #eace28;
+}
 .dot:nth-child(12n+10){
+    background-color: #dd873a;
+}
+.dot:nth-child(12n+11){
+    background-color: #dd873a;
+}
+.dot:nth-child(12n+12){
     background-color: #dd873a;
 }
 
 .modal {
-  font-family: stevie-sans, sans-serif;
-  font-size: 0.5em;
-  color:#0b2738;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
+  padding-bottom:100px;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  /*overflow: auto;  Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 .modal-content {
-  background-color: #fefefe;
+  font-family: stevie-sans, sans-serif;
+  font-size: 0.5em;
+  color:#0b2738;
+  background-color: #dda6a6;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  border: none;
+  border-radius: 15px;
+  width: 45%;
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
 }
 
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.text{
+  margin: 50px;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+span.filler{
+  display:none;
 }
 
 img{
-  width:1200px;
-  height: auto;
+  height:482px;
+  max-height: 100%;
+  width: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+.diff{
+  width:650px;
+  max-width:100%;
+  height:auto;
+}
+
+.diff1{
+  width:650px;
+  max-width:100%;
+  height:auto;
+  margin: 30px 0px;
+}
+
+.diff2>img{
+  display:none;
+  z-index: 1000;
+  position:absolute;
+  width:200px;
+  height:auto;
+}
+
+span.poof:hover + .diff2>img{
+   display: block;
+}
+
 
 a:link {
   color: #0b2738;
@@ -133,10 +182,3 @@ a:active {
   background-color: transparent;
   text-decoration: none;
 }
-
-/*p {
-  display: inline-block;
-  width: 200px;
-  height: 100px;
-  margin: 1em;
-}*/

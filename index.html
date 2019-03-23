@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="https://use.typekit.net/jwl0xoz.css">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
 
+<style>
+
+.close {
+  color: #0b2738;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.close:hover , .close:focus{
+  color: #e5caca;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
   </head>
 
   <body>
@@ -16,8 +31,8 @@ class="btn">24th of february 1999</button></span>
 
       <div id="myModal" class="modal">
         <div class="modal-content">
-          <div class="modal-container">
-           <span onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+           <span onclick="document.getElementById('myModal').style.display='none'" class="close">&times;</span>
+           <div class="text">
             <p>born in Beijing, China</p>
             <img src="image/baby.jpg" alt="baby photo">
           </div>
@@ -30,11 +45,11 @@ class="btn">5 months old</button></span>
 
       <div id="myModal2" class="modal">
         <div class="modal-content">
-          <div class="modal-container">
-           <span onclick="document.getElementById('myModal2').style.display='none'">&times;</span>
+           <span onclick="document.getElementById('myModal2').style.display='none'" class="close">&times;</span>
+           <div class="text">
             <p>moved to New Zealand</p>
             <img src="image/baby2.jpg" alt="baby photo 2">
-          </div>
+        </div>
         </div>
       </div>
 
@@ -45,12 +60,11 @@ class="btn">year 1</button></span>
 
       <div id="myModal4" class="modal">
         <div class="modal-content">
-          <div class="modal-container">
-           <span onclick="document.getElementById('myModal4').style.display='none'">&times;</span>
+           <span onclick="document.getElementById('myModal4').style.display='none'" class="close">&times;</span>
+           <div class="text">
             <p>had her first tooth filling</p>
-            <img src="image/baby2.jpg" alt="baby photo 2">
           </div>
-        </div>
+          </div>
       </div>
 
     <span class="dot"></span> <span class="poof"><button onclick="document.getElementById('myModal5').style.display='block'"
@@ -58,13 +72,17 @@ class="btn">age 6</button></span>
 
       <div id="myModal5" class="modal">
         <div class="modal-content">
-          <div class="modal-container">
-           <span onclick="document.getElementById('myModal5').style.display='none'">&times;</span>
+           <span onclick="document.getElementById('myModal5').style.display='none'" class="close">&times;</span>
+            <div class="text">
             <p>first asthma attack</p>
-            <img src="image/baby2.jpg" alt="baby photo 2">
+            <p>it happened in the middle of the night (which is a big deal with you're 6).
+              yilan's parents rushed her to the children's hospital and, by coincidence,
+              the doctor who treated her was her teacher's husband. their car also got towed for
+              the first time this day, and they had to go retrieve it at 2am in the morning.
+            </p>
+          </div>
           </div>
         </div>
-      </div>
 
     <span class="dot"></span> <span class="poof">2007</span> <iframe src="https://giphy.com/embed/2Y7tZMmIpwV6Lnc5QC" style="left:80vw"></iframe>
 
@@ -75,12 +93,12 @@ class="btn">age 6</button></span>
 
       <div id="myModal7" class="modal">
         <div class="modal-content">
-          <div class="modal-container">
-           <span onclick="document.getElementById('myModal7').style.display='none'">&times;</span>
+           <span onclick="document.getElementById('myModal7').style.display='none'" class="close">&times;</span>
+          <div class="text">
             <p>met elementary school best friends</p>
-            <img src="image/baby2.jpg" alt="baby photo 2">
+            <img src="image/penguins.jpg" alt="modelling clay penguins">
           </div>
-        </div>
+          </div>
       </div>
 
     <span class="dot"></span> <span class="poof"><button onclick="document.getElementById('myModal8').style.display='block'"
@@ -88,12 +106,12 @@ class="btn">a month before middle school started</button></span>
 
       <div id="myModal8" class="modal">
         <div class="modal-content">
-          <div class="modal-container">
-           <span onclick="document.getElementById('myModal8').style.display='none'">&times;</span>
+           <span onclick="document.getElementById('myModal8').style.display='none'" class="close">&times;</span>
+          <div class="text">
             <p>grandma passed away with breast cancer</p>
             <img src="image/grandma.jpg" alt="grandma and me">
           </div>
-        </div>
+          </div>
       </div>
 
     <span class="dot"></span> <span class="poof"><button onclick="document.getElementById('myModal9').style.display='block'"
@@ -101,11 +119,10 @@ class="btn">2010</button></span>
 
       <div id="myModal9" class="modal">
         <div class="modal-content">
-          <div class="modal-container">
-           <span onclick="document.getElementById('myModal9').style.display='none'">&times;</span>
+           <span onclick="document.getElementById('myModal9').style.display='none'" class="close">&times;</span>
+           <div class="text">
             <p>started learning Japanese at school so that she could stay in touch with her elementary school best friend who permanently moved back to Japan</p>
-            <img src="image/baby2.jpg" alt="baby photo 2">
-          </div>
+        </div>
         </div>
       </div>
 
@@ -114,39 +131,36 @@ class="btn">twelve</button></span>
 
       <div id="myModal10" class="modal">
         <div class="modal-content">
-          <div class="modal-container">
-           <span onclick="document.getElementById('myModal10').style.display='none'">&times;</span>
+           <span onclick="document.getElementById('myModal10').style.display='none'" class="close">&times;</span>
+          <div class="text">
             <p>started playing badminton to help asthma</p>
-            <img src="image/baby2.jpg" alt="baby photo 2">
-          </div>
+            <img src="image/badminton_team.jpg" alt="harbour badminton team" class="diff">
+        </div>
         </div>
       </div>
 
-    <span class="dot"></span> <span class="poof"><button onclick="document.getElementById('myModal11').style.display='block'"
-class="btn">13 or 14 (??)</button></span>
+    <span class="dot"></span> <span class="poof">
+      <a href="https://www.mangareader.net/fruits-basket" target="_blank">13 or 14 (??)</a>
+    </span>
+           <span class="filler"> </span>
 
-      <div id="myModal11" class="modal">
-        <div class="modal-content">
-          <div class="modal-container">
-           <span onclick="document.getElementById('myModal11').style.display='none'">&times;</span>
-            <p>read a lot of manga</p>
-            <img src="image/baby2.jpg" alt="baby photo 2">
-          </div>
-        </div>
-      </div>
 
-<span class="dot"></span> <span class="poof"><a href="https://www.youtube.com/watch?v=qIt6KCwlFPw" target="_blank">definitely fourteen</a></span> <iframe src="https://giphy.com/embed/bMLGNRoAy0Yko" style="left:13vw"></iframe>
+    <span class="dot"></span> <span class="poof">
+      <a href="https://www.youtube.com/watch?v=qIt6KCwlFPw" target="_blank">definitely fourteen</a>
+    </span>
+    <iframe src="https://giphy.com/embed/bMLGNRoAy0Yko" style="left:13vw"></iframe>
 
-    <span class="dot"></span> <span class="poof"><button onclick="document.getElementById('myModal13').style.display='block'"
+    <span class="dot"></span> <span class="poof">
+      <button onclick="document.getElementById('myModal13').style.display='block'"
 class="btn">last 2 years of middle school</button></span>
 
       <div id="myModal13" class="modal">
         <div class="modal-content">
-          <div class="modal-container">
-           <span onclick="document.getElementById('myModal13').style.display='none'">&times;</span>
+           <span onclick="document.getElementById('myModal13').style.display='none'" class="close">&times;</span>
+          <div class="text">
             <p>such a blur</p>
             <img src="image/baby2.jpg" alt="baby photo 2">
-          </div>
+        </div>
         </div>
       </div>
 
@@ -155,31 +169,119 @@ class="btn">two thousand and fifteen</button></span>
 
       <div id="myModal14" class="modal">
         <div class="modal-content">
-          <div class="modal-container">
-           <span onclick="document.getElementById('myModal14').style.display='none'">&times;</span>
-            <p>getting into North Harbour team 1 for the first time</p>
-            <img src="image/baby2.jpg" alt="baby photo 2">
-          </div>
+           <span onclick="document.getElementById('myModal14').style.display='none'" class="close">&times;</span>
+          <div class="text">
+            <p>getting into North Harbour team 1 for the first time. </p>
+            <p>the team took second place in the under 17 age group in both the New Zealand North Island and National
+            championships. it sounds pretty good on paper, but the team was rather disappointed. usually North Harbour under 17 team 1 would take at least
+            one of two golds.</p>
+            <img src="image/badminton_win.jpg" alt="winning" class="diff">
+        </div>
         </div>
       </div>
 
-    <span class="dot"></span> <span class="poof"><button onclick="document.getElementById('myModal14').style.display='block'"
-class="btn">two thousand and fifteen</button></span>
+    <span class="dot"></span> <span class="poof"><button onclick="document.getElementById('myModal15').style.display='block'"
+class="btn">year 12</button></span>
 
-      <div id="myModal14" class="modal">
+      <div id="myModal15" class="modal">
         <div class="modal-content">
-          <div class="modal-container">
-           <span onclick="document.getElementById('myModal14').style.display='none'">&times;</span>
-            <p>getting into North Harbour team 1 for the first time</p>
-            <img src="image/baby2.jpg" alt="baby photo 2">
+           <span onclick="document.getElementById('myModal15').style.display='none'" class="close">&times;</span>
+          <div class="text">
+            <p>started studying IB</p>
+            <img src="image/ib.jpg" alt="we crying">
           </div>
-        </div>
+          </div>
       </div>
+
+      <span class="dot"></span> <span class="poof"><button onclick="document.getElementById('myModal16').style.display='block'"
+  class="btn">2016 pre-badminton season</button></span>
+
+        <div id="myModal16" class="modal">
+          <div class="modal-content">
+             <span onclick="document.getElementById('myModal16').style.display='none'" class="close">&times;</span>
+            <div class="text">
+              <p>sprained ankle, retired from badminton to recover and concentrate on senior year</p>
+              <img src="image/ball.jpg" alt="Kristin Ball 2016" class="diff">
+            </div>
+            </div>
+        </div>
+
+      <span class="dot"></span> <span class="poof"><button onclick="document.getElementById('myModal17').style.display='block'"
+  class="btn"><a href="https://www.youtube.com/watch?v=ZPrAKuOBWzw" target="_blank">year 13 (senior year)</a></button></span>
+
+        <div id="myModal17" class="modal">
+          <div class="modal-content">
+             <span onclick="document.getElementById('myModal17').style.display='none'" class="close">&times;</span>
+            <div class="text">
+              <p>became obsessed with Hamilton; listened to it every day while washing dishes.
+              listened to it to the point where her parents got sick of it.</p>
+            </div>
+            </div>
+        </div>
+
+      <span class="dot"></span> <span class="poof">for 3 months, 5 hours a day</span>
+      <iframe src="https://giphy.com/embed/3o7btPCcdNniyf0ArS" style="left:49vw"></iframe>
+
+      <span class="dot"></span> <span class="poof"><button onclick="document.getElementById('myModal19').style.display='block'"
+  class="btn">2017</button></span>
+
+        <div id="myModal19" class="modal">
+          <div class="modal-content">
+             <span onclick="document.getElementById('myModal19').style.display='none'" class="close">&times;</span>
+            <div class="text">
+              <p>studied architecture for a semester at the University of Auckland</p>
+              <img src="image/model1.jpg" alt="Queen's Wharf shelter model" class="diff1">
+              <img src="image/model2.jpg" alt="paper shadow model 1" class="diff1">
+              <img src="image/model3.jpg" alt="paper shadow model 2" class="diff1">
+              <img src="image/model4.jpg" alt="paper shadow model 3" class="diff1">
+              <img src="image/model5.jpg" alt="interior" class="diff1">
+              <img src="image/model6.jpg" alt="duck feeding" class="diff1">
+              <img src="image/model7.jpg" alt="negative" class="diff1">
+            </div>
+            </div>
+        </div>
+
+        <span class="dot"></span> <span class="poof"><button onclick="document.getElementById('myModal20').style.display='block'"
+    class="btn">march 2017</button></span>
+
+          <div id="myModal20" class="modal">
+            <div class="modal-content">
+               <span onclick="document.getElementById('myModal20').style.display='none'" class="close">&times;</span>
+              <div class="text">
+                <p>met one of her closest friends</p>
+                <img src="image/angela.png" alt="angela">
+              </div>
+              </div>
+          </div>
+
+        <span class="dot"></span> <span class="poof"><button onclick="document.getElementById('myModal21').style.display='block'"
+    class="btn">more stuff from two thousand and seventeen</button></span>
+
+          <div id="myModal21" class="modal">
+            <div class="modal-content">
+               <span onclick="document.getElementById('myModal21').style.display='none'" class="close">&times;</span>
+              <div class="text">
+                <p>found a family in goju ryu karate</p>
+                <img src="image/karate.jpg" alt="karate" class="diff">
+              </div>
+              </div>
+          </div>
+
+        <span class="dot"></span> <span class="poof">class of 2021</span>
+        <div class="diff2">
+          <img src="image/risd.png" alt="risd" style="left:40vw; top:20vw">
+          <img src="image/scrotie.jpg" alt="scrotie" style="left:20vw; top:10vw">
+          <img src="image/charcoal.jpg" alt="charcoal" style="left:80vw; top:5vw">
+        </div>
+
+        <span class="dot"></span> <span class="poof">summer break</span>
+          <iframe src="https://giphy.com/embed/xUNda8aE8SglPAagsE" style="left:13vw"></iframe>
+
+        <span class="dot"></span> <span class="poof"><a href="https://www.youtube.com/watch?v=JHDw2RHzE4k" target="_blank">fall semester sophomore year</a></span>
+        <span class="dot"></span>
+
+
     <!--
-    <span class="dot"></span> <span class="poof">kept on improving in badminton and winning games, anxiety levels also rose with success</span>
-    <span class="dot"></span> <span class="poof">started studying IB in year 12</span>
-    <span class="dot"></span> <span class="poof">sprained ankle, retired from 2017 badminton season to recover and concentrate on senior year</span>
-    <span class="dot"></span> <span class="poof">became obsessed with Hamilton in year 13; listened to it every day</span>
     <span class="dot"></span> <span class="poof">studied maths 5 hours a day for 3 months to improve skills for final exam</span>
     <span class="dot"></span> <span class="poof">2017 studied architectire for a semester</span>
     <span class="dot"></span> <span class="poof">met one of her closest friends through architecture</span>
